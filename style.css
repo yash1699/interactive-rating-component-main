@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap');
+body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+}
+p{
+    font-size: 14px;
+    color: hsl(216, 12%, 54%);
+    line-height: 1.5;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 18px;
+    padding-top: 30px;
+    max-width: 350px;
+    margin-top: 12%;
+    margin-left: 37%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 7%;
+}
+
+.dot {
+    height: 35px;
+    width: 35px;
+    background-color: hsl(213, 17%, 24%);
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.hover-effect {
+    margin: 6px;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(216, 12%, 54%);
+}
+
+.hover-effect p{
+    margin-top: 15%;
+}
+
+.hover-effect:hover{
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%) !important;
+}
+
+.hover-effect:hover p{
+    color: white;
+}
+
+.star{
+    height: 17px;
+    width: 17px;
+    margin-top: 23%;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.btn {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+    border-radius: 22px;
+    padding: 13px;
+    border: 0px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-size: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}

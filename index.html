@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
 
   <!-- Rating state start -->
 
-  <div class="card">
+  <div id="rating-card" class="card">
     <div class="container">
       <span class="dot"><img class="star" src="./images/icon-star.svg" alt="icon-star.svg"></span>
       <h2>How did we do?</h2>
@@ -30,7 +30,7 @@
       <span id="4" class="dot hover-effect" onclick="selectRating(4)"><p>4</p></span>
       <span id="5" class="dot hover-effect" onclick="selectRating(5)"><p>5</p></span>
 
-      <button class="btn">SUBMIT</button>
+      <button class="btn" onclick="submitRating()">SUBMIT</button>
 
     </div>
   </div>
@@ -39,12 +39,19 @@
 
   <!-- Thank you state start -->
 
-  <!-- You selected Add rating here out of 5
+  <div id="thank-you-card" class="card ">
+    <div class="container flex-center">
+      <img id="thank-you-img" src="./images/illustration-thank-you.svg" alt="illustration-thank-you.svg">
+      <span id="rating">
+      </span>
 
-  Thank you!
+      <h2 style="text-align: center; margin-top: 35px; margin-bottom: 0px;">Thank you!</h2>
+      
+      <p style="text-align: center;">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
+    </div>
+  </div>
 
   <!-- Thank you state end -->
 

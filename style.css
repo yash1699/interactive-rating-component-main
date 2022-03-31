@@ -61,6 +61,12 @@ p{
     padding: 2px 16px;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .btn {
     margin-top: 24px;
     margin-bottom: 16px;
@@ -77,4 +83,55 @@ p{
     cursor: pointer;
     background-color: white;
     color: hsl(25, 97%, 53%);
+}
+
+#rating {
+    height: 17px;
+    line-height: 17px;
+    width: 52%;
+    font-size: 14px;
+    color: hsl(25, 97%, 53%);
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(213, 17%, 24%);
+    padding: 6px;
+    border-radius: 22px;
+    margin: auto;
+    margin-top: 35px;
+    display: inline-block;
+    text-align: center;
+}
+
+#thank-you-card {
+    display: none;
+    justify-content: center;
+}
+
+#thank-you-img {
+    display: block;
+    margin: auto;
+    height: 90px;
+    width: 135px;
+}
+
+@media screen and (max-width: 376px) {
+    .card {
+        max-width: 306px;
+        padding: 12px;
+        margin-left: 3.5%;
+        margin-top: 39%
+    }
+
+    .hover-effect {
+        margin: 4px;
+        margin-top: 15px;
+    }
+
+    .dot {
+        height: 30px;
+        width: 30px;
+    }
+
+    #rating{
+        width: 60%;
+    }
 }

@@ -11,3 +11,14 @@ function selectRating(value) {
     rating.style.backgroundColor = "hsl(217, 12%, 63%)";
     currentSelected = value;
 }
+
+function submitRating() {
+    const ratingCard = document.getElementById('rating-card');
+    const thankYouCard = document.getElementById('thank-you-card');
+    const span = document.getElementById('rating');
+
+    span.innerHTML = `You selected ${currentSelected} out of 5`;
+
+    ratingCard.style.display = "none";
+    thankYouCard.style.display = "flex";
+}
